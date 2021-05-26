@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <title>Idan Harari task</title>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- TO-DO title -->
+        <div class="header">
+            TODO List :
+        </div>
+        <div class="flex">
+            <input id="title" type="text" class="title" placeholder="Task Title.." style="height: 5.5vh; border: 1px solid gray; border-radius: 5%;">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- Select options (high/low) -->
+            <select id="proirity" name="lowhigh" style="height: 5.5vh; padding: 7px; border: 1px solid gray; border-radius: 5%;">
+            <option value="high">high</option>
+            <option value="low">low</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- Search -->
+            <div class="input-group mb-3">
+                <input id="search" type="text" class="form-control-sm" style="border: 1px solid gray;" placeholder="Search A Task..." aria-label="" aria-describedby="basic-addon1">
+                <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" onclick="search()">Search</button>  
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-append">
+                    
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- Buttons (add,remove,show all) -->
+        <div class="btns">
+            <button onclick="addToArr()" class="btn btn-info">Add to the list</button>
+            &nbsp;&nbsp;&nbsp;
+            <button onclick="removeFromArr()" class="btn btn-info">Remove from the list</button>
+            &nbsp;&nbsp;&nbsp;
+            <button onclick="showNCheckColor()" class="btn btn-info">Show all the task</button> 
+        </div>
+        <br>
+        <!-- Task view -->
+        <div id="showAll" class="showAll"></div>
+    </div>
+</body>
+</html>
