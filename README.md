@@ -6,3 +6,5 @@ bonus :proirity - color
 structure 
 [{id,proirity,Title}]
 
+let ar = [{1, 'low','add header'},{2, 'high','add footer'}]
+
